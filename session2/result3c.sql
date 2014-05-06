@@ -4,7 +4,9 @@ WHERE EXISTS (
 	SELECT *
 	FROM Writes w
 	WHERE p.pid = w.pid
-	AND EXISTS (
-		'a movie without a director'
+	AND NOT EXISTS (
+		SELECT *
+		FROM Directs d
+		WHERE w.mid = d.mid
 	)
 );
