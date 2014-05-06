@@ -1,0 +1,10 @@
+﻿INSERT INTO "problem1" VALUES ('a', false, 'de capaciteiten van meerdere voertuigen kan gelijk zijn'),
+	('b', true, 'van elk voertuig weet je de capaciteit'),
+	('c', false, 'er kunnen meerdere pakjes op een factuur staan'),
+	('d', true, 'want C'),
+	('e', true, '8 & 5'),
+	('f', false, 'want een bezorger kan meerdere voertuigen hebben'),
+	('g', true, 'want een voertuig kan maar één bezorger hebben'),
+	('h', true, 'want g'),
+	('i', true, 'want b'),
+	('j', true, 'want h & i');
