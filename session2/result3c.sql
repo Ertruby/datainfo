@@ -1,3 +1,10 @@
 ﻿SELECT p.name 
 FROM Person p
-WHERE 'p is a writer that wrote a movie without a director';
+WHERE EXISTS (
+	SELECT *
+	FROM Writes w
+	WHERE p.pid = w.pid
+	AND EXISTS (
+		'a movie without a director'
+	)
+);
