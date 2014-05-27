@@ -1,0 +1,3 @@
+﻿UPDATE Boek 
+SET isbn = '32984923'
+WHERE isbn = '1234567890';

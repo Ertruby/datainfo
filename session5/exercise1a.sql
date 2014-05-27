@@ -10,6 +10,6 @@ CREATE TABLE Exemplaar (
 	volgnummer int,
 	gewicht int,
 	kast varchar(5),
+	PRIMARY KEY (isbn, volgnummer),
 	FOREIGN KEY (isbn) REFERENCES Boek(isbn) ON DELETE CASCADE ON UPDATE CASCADE
-	PRIMARY KEY (isbn, volgnummer)
 	);
